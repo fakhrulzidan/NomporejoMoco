@@ -1,0 +1,73 @@
+<?php
+session_start();
+
+// Anti-cache
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+
+if (isset($_SESSION['username'])) {
+    header("Location: dashboard.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nomporejo Moco</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="login-container">
+                <div class="login-box">
+                    <!-- Header dengan Logo dan Brand -->
+                    <div class="login-header">
+                        <div class="logo">
+                            <img src="assets/logo.png" alt="Logo" style="height:48px;">
+                            <h1 class="login-brand">Perpustakaan Nomporejo</h1>
+                        </div>
+                    </div>
+                    
+                    <!-- Form Login (logic ke login.php) -->
+                    <form class="login-form" action="login.php" method="POST">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input 
+                                type="text" 
+                                id="username" 
+                                name="username" 
+                                placeholder="Masukan username"
+                                required
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Masukan password"
+                                required
+                            >
+                        </div>
+                        
+                        <button type="submit" class="login-btn">Masuk</button>
+                    </form>
+                    
+                    <!-- Hint Text -->
+                    <div class="login-hint">
+                        <p><strong>Username:</strong> admin</p>
+                        <p><strong>Password:</strong> password123</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

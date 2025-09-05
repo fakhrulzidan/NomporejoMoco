@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Buku - Perpustakaan Nomporejo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="container">
+   <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+        <h2>Perpustakaan<br>Nomporejo</h2>
+      </div>
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="Dashboard.html"><span>📚</span> Daftar Buku</a>
+          </li>
+          <li>
+            <a href="TambahBuku.html"><span>➕</span> Tambah Buku</a>
+          </li>
+          <li>
+            <a href="PinjamBuku.html"><span>📖</span> Pinjam Buku</a>
+          </li>
+          <li>
+            <a href="Pengaturan.html"><span>⚙️</span> Pengaturan</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header dengan tombol kembali -->
+      <div class="top-bar">
+        <button class="btn-back" onclick="window.history.back()">⬅ Kembali</button>
+      </div>
+
+      <div class="detail-container">
+        <div class="book-cover">
+          <img src="assets/buku1.jpeg" alt="Aduh, Beru Berulah Lagi">
+        </div>
+        <div class="book-info">
+          <p><strong>Judul Buku</strong> : Aduh, Beru Berulah Lagi</p>
+          <p><strong>No. Inventaris</strong> : 5 - A/2025</p>
+          <p><strong>Nama Penulis</strong> : Andi Saputra</p>
+          <p><strong>Penerbit</strong> : Sinarmas</p>
+          <p><strong>Tahun Terbit</strong> : 2024</p>
+          <p><strong>Status Dipinjam</strong> : <span class="status available">Tersedia</span></p>
+        </div>
+      </div>
+
+      <!-- Tombol Edit -->
+      <div class="edit-btn-container">
+        <a href="editBuku.html" class="btn-edit">✏️ Edit Buku</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

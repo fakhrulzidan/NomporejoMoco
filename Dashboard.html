@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perpustakaan Nomporejo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+        <h2>Perpustakaan<br>Nomporejo</h2>
+      </div>
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="Dashboard.html"><span>📚</span> Daftar Buku</a>
+          </li>
+          <li>
+            <a href="TambahBuku.html"><span>➕</span> Tambah Buku</a>
+          </li>
+          <li>
+            <a href="PinjamBuku.html"><span>📖</span> Pinjam Buku</a>
+          </li>
+          <li>
+            <a href="Pengaturan.html"><span>⚙️</span> Pengaturan</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Search -->
+      <div class="search-bar">
+        <input type="text" placeholder="Cari Buku" />
+      </div>
+
+      <!-- Daftar Buku -->
+      <h1>Daftar Buku</h1>
+      <div class="book-list">
+        <!-- Card Buku -->
+        <a href="detailBuku.html" class="book-card">
+          <img src="assets/buku1.jpeg" alt="Aduh, Beru Berulah Lagi" />
+          <h3>Aduh, Beru Berulah Lagi</h3>
+          <p>Andi Saputra</p>
+        </a>
+
+        <a href="detailBuku.html" class="book-card">
+          <img src="assets/buku2.jpeg" alt="Suara Apa Itu?" />
+          <h3>Suara Apa Itu?</h3>
+          <p>Andi Saputra</p>
+        </a>
+
+        <a href="detailBuku.html" class="book-card">
+          <img src="assets/buku3.jpeg" alt="Akhirnya Didi Tahu" />
+          <h3>Akhirnya Didi Tahu</h3>
+          <p>Andi Saputra</p>
+        </a>
+
+        <a href="detailBuku.html" class="book-card">
+          <img src="cover4.jpg" alt="Kantong Ajaib" />
+          <h3>Kantong Ajaib</h3>
+          <p>Andi Saputra</p>
+        </a>
+
+        <!-- Tambahkan buku lain sesuai kebutuhan -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>

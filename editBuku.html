@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Buku</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="container">
+ <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+        <h2>Perpustakaan<br>Nomporejo</h2>
+      </div>
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="Dashboard.html"><span>📚</span> Daftar Buku</a>
+          </li>
+          <li>
+            <a href="TambahBuku.html"><span>➕</span> Tambah Buku</a>
+          </li>
+          <li>
+            <a href="PinjamBuku.html"><span>📖</span> Pinjam Buku</a>
+          </li>
+          <li>
+            <a href="Pengaturan.html"><span>⚙️</span> Pengaturan</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>Edit Buku</h1>
+      <div class="content">
+        <!-- Gambar Buku -->
+        <div class="book-image">
+          <img src="assets/buku1.jpeg" alt="Cover Buku">
+          <button class="btn-change">Ganti Gambar</button>
+        </div>
+
+        <!-- Form Edit -->
+        <form class="form-edit">
+          <label>Judul Buku</label>
+          <input type="text" value="Aduh, Beru Berulah Lagi">
+
+          <label>No. Inventaris</label>
+          <input type="text" value="5 - A/2025">
+
+          <label>Nama Penulis</label>
+          <input type="text" value="Andi Saputra">
+
+          <label>Penerbit</label>
+          <input type="text" value="Sinarmas">
+
+          <label>Tahun Terbit</label>
+          <input type="number" class="input-tahun" value="2024">
+
+          <label>Status Dipinjam</label>
+          <div class="radio-group">
+            <label><input type="radio" name="status" checked> Tersedia</label>
+            <label><input type="radio" name="status"> Dipinjam</label>
+          </div>
+        </form>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div class="actions">
+        <button class="btn-delete">🗑 Hapus Buku</button>
+        <div>
+          <button class="btn-cancel">Batal</button>
+          <button class="btn-save">Simpan</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

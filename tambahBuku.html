@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambah Buku - Perpustakaan Nomporejo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+        <h2>Perpustakaan<br>Nomporejo</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Dashboard.html">📚 Daftar Buku</a></li>
+          <li class="active"><a href="tambah.html">➕ Tambah Buku</a></li>
+          <li><a href="pinjam.html">📖 Pinjam Buku</a></li>
+          <li><a href="pengaturan.html">⚙️ Pengaturan</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="form-container">
+        <h1>Form Tambah Buku</h1>
+        <form>
+          <label for="noInventaris">No Inventaris</label>
+          <input type="text" id="noInventaris" placeholder="Masukan No Inventaris">
+
+          <label for="judul">Judul Buku</label>
+          <input type="text" id="judul" placeholder="Masukan Judul Buku">
+
+          <label for="penulis">Nama Penulis</label>
+          <input type="text" id="penulis" placeholder="Masukan Nama Penulis">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="penerbit">Penerbit</label>
+              <input type="text" id="penerbit" placeholder="Masukan Asal Penerbit">
+            </div>
+            <div class="form-group">
+              <label for="tahun">Tahun Penerbit</label>
+              <input type="text" id="tahun" placeholder="Masukan Tahun Terbit">
+            </div>
+          </div>
+
+          <label for="gambar">Gambar</label>
+          <div class="upload-box">
+            <input type="file" id="gambar">
+            <p>Masukan Gambar</p>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-cancel">Batal</button>
+            <button type="submit" class="btn-save">Simpan</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
